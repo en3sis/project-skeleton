@@ -1,0 +1,28 @@
+
+$primary      : #F54E59;
+$primarylight : #FF797F;
+$primarydark  : #D2424B;
+// 
+$secondary    : #42B983;
+$secondarydark: #358F66;
+
+// 
+$grey         : #F7F8FB;
+$white        : #ffffff;
+$dark         : #4E4E5D;
+
+// TYPOGRAPHY
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+$base-font: 'Roboto';
+
+// MEDIA QUERY
+$break-small: 820px;
+$break-large: 1200px;
+
+// USAGE of MEDIA QUERY
+// @media screen and (max-width: $break-small) {
+// 	font-size : 1em;
+// 	text-align: center;
+// }
+

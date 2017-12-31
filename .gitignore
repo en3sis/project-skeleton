@@ -1,0 +1,13 @@
+*.sublime-workspace
+.vscode/
+npm-debug.log*
+.sass-cache/
+.tmp/
+_me
+node_modules/
+tmp/
+temp/
+$RECYCLE.BIN/
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate

@@ -1,0 +1,37 @@
+{
+  "name": "skeleton",
+  "version": "1.0.0",
+  "description": "Personal skeleton for Fron-end Web Design",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-htmlmin": "^2.4.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/en3sis/project-skeleton.git"
+  },
+  "keywords": [
+    "node",
+    "grunt",
+    "sass",
+    "browser-sync"
+  ],
+  "author": "@en3sis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/en3sis/project-skeleton/issues"
+  },
+  "homepage": "https://github.com/en3sis/project-skeleton#readme"
+}

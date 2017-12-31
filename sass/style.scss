@@ -1,0 +1,43 @@
+@import 'normalize';
+@import 'mixin/general';
+@import 'imports/flex';
+@import 'variables';
+
+
+// =========================================
+// GENERAL STYLE
+html,body{
+  font-family: $base-font;
+  font-size  : $base-font-size;
+  font-weight: 300;
+  color      : $dark;
+}
+
+// Headers font-size
+// h1,h2,h3,h4,h5,h6
+h1{font-size: $h1-font-size;}
+h2{font-size: $h2-font-size;}
+h3{font-size: $h3-font-size;}
+h4{font-size: $h4-font-size;}
+h5{font-size: $h5-font-size;}
+h5{font-size: $h5-font-size;}
+
+// Material Icons font
+.material-icons {
+  font-family   : 'Material Icons';
+  font-weight   : normal;
+  font-style    : normal;
+  font-size     : 24px;  
+  display       : inline-block;
+  line-height   : 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap     : normal;
+  white-space   : nowrap;
+  direction     : ltr;
+
+  -webkit-font-smoothing : antialiased;
+  text-rendering         : optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings  : 'liga';
+}
