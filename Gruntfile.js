@@ -1,13 +1,16 @@
-// This shows a full config file!
 module.exports = function (grunt) {
     grunt.initConfig({
-        // WATCH TASK
+        /* =================================
+        =  WATCH Task
+        ================================= */
         watch: {
             files: '**/*.scss',
             tasks: ['sass']
         },
 
-        // SASS TASK
+        /* =================================
+        =  SASS Task
+        ================================= */
         sass: {
           dev: {
               files: {
@@ -16,7 +19,9 @@ module.exports = function (grunt) {
           }
         },
 
-        // CSS MIN TASK
+        /* =================================
+        =  CSS MIN Task
+        ================================= */
         cssmin: {
           target: {
             files: [{
@@ -28,10 +33,13 @@ module.exports = function (grunt) {
             }]
           }
         },
-        // HTML MIN TASK
-        htmlmin: {                                     
-            dist: {                                     
-              options: {   
+
+        /* =================================
+        =  HTML MIN Task
+        ================================= */
+        htmlmin: {
+            dist: {
+              options: {
                   collapseBooleanAttributes: true,
                   collapseWhitespace: true,
                   conservativeCollapse: true,
@@ -55,7 +63,7 @@ module.exports = function (grunt) {
                   sortClassName: false
                 },
 
-              files: {                             
+              files: {
                 'dist/index.html': 'src/index.html'
                 // Dictionary of files
                 // 'destination': 'source'
@@ -63,13 +71,16 @@ module.exports = function (grunt) {
             }
           },
 
-        // BROWSERSYNC TASK
+        /* =================================
+        =  BrowserSync Task
+        ================================= */
         browserSync: {
             dev: {
                 bsFiles: {
                     src : [
                         'src/css/*.css',
-                        'src/*.html'
+                        'src/*.html',
+                        'src/*.js'
                     ]
                 },
                 options: {
@@ -80,12 +91,19 @@ module.exports = function (grunt) {
         }
     });
 
+    /* =================================
+    =  GRUNT NPM TAKS
+    ================================= */
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
 
+    /* =================================
+    =  Register Task
+    ================================= */
     grunt.registerTask('dist', ['htmlmin', 'cssmin']);
     grunt.registerTask('default', ['browserSync', 'watch']);
+
 };

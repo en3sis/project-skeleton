@@ -1,15 +1,23 @@
 # Hello there!
 ![alt text](http://dev.codibrie.cl/_resources/github/skeleton/banner.png "Tecnology")
 
-This is my personal skeleton that I use when I start a new project.  
-I use it mostly for Front-end Web Design making use of SASS and Browser Sync to preview the changes on PC, mobile etc.  
-Feel free to create requests and improve it.  
+This is my personal skeleton that I use when I start a new project.
+I use it mostly for Front-end Web Design making use of SASS and Browser Sync to preview the changes on PC, mobile etc.
+
+Feel free to create requests and improve it.
+[Issues](https://github.com/en3sis/project-skeleton/issues) / [Pull Request](https://github.com/en3sis/project-skeleton/pulls)
+
+
 
 
 ## Where to start ##
-Make sure you have [node.js installed](https://nodejs.org/en/) and [Ruby](https://rubyinstaller.org/)  
 
-Install all the packages and dependencies
+Make sure you have [Node.js](https://nodejs.org/en/) installed, [Grunt](http://gruntjs.com/), [Ruby](https://rubyinstaller.org/) and [Sass](http://sass-lang.com/install)
+
+If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a Gruntfile as well as install and use Grunt plugins.
+
+
+###### Install all the packages and dependencies
 ```
 ~ npm install
 ```
@@ -20,16 +28,20 @@ Install all the packages and dependencies
 
 Run [Browser-sync](https://www.browsersync.io/) and watch SASS files.
 ```
-~ grunt 
+~ grunt
 ```
 ###### For production:
+
 Use the task
+
 ```
 ~ grunt dist
 ```
-This will generate a style.min.css file and and inline the HTML files  
+This will generate a style.min.css file and and in-line the HTML files.
 
 
+
+**NOTE:** You still need to manualy link the .min.css inside the inlined HTML File for now (fix in next relase)
 
 
 ## Grunt taks ##
@@ -42,6 +54,8 @@ This will generate a style.min.css file and and inline the HTML files
 
 
 ## SASS Files
+[Sass](http://sass-lang.com/) is a preprocessor that adds nested rules, variables, mixins and functions, selector inheritance, and more to CSS. Sass files compile into well-formatted, standard CSS to use in your site or application.
+
 Imported inside the main SASS file /sass/style.scss:
 * [Roboto Font](https://fonts.google.com/specimen/Roboto?selection.family=Roboto)
 * [Material-Icons](https://google.github.io/material-design-icons/)
@@ -49,7 +63,7 @@ Imported inside the main SASS file /sass/style.scss:
 * [Flexblox Mixin for SASS](https://github.com/mastastealth/sass-flex-mixin)
 
 
-And some other folder structure for components and imports.
+And other folder structure for components and imports.
 
 
 
