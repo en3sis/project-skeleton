@@ -2,6 +2,7 @@
 @import 'mixin/general';
 @import 'imports/flex';
 @import 'variables';
+@import 'functions';
 
 
 // =========================================
@@ -10,7 +11,7 @@ html,body{
   font-family: $base-font;
   font-size  : $base-font-size;
   font-weight: 300;
-  color      : $dark;
+  color: color(dark)
 }
 
 // Headers font-size
@@ -27,7 +28,7 @@ h5{font-size: $h5-font-size;}
   font-family   : 'Material Icons';
   font-weight   : normal;
   font-style    : normal;
-  font-size     : 24px;  
+  font-size     : 24px;
   display       : inline-block;
   line-height   : 1;
   text-transform: none;

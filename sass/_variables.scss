@@ -1,15 +1,20 @@
+$colors: (
+	primary:(
+		base : #F54E59,
+		light: #FF797F,
+		dark : #D2424B
+	),
+	secondary:(
+		base: #42B983,
+		dark: #358F66
+	),
 
-$primary      : #F54E59;
-$primarylight : #FF797F;
-$primarydark  : #D2424B;
-// 
-$secondary    : #42B983;
-$secondarydark: #358F66;
+	grey : #F7F8FB,
+	white: #ffffff,
+	dark : #333333
+);
 
-// 
-$grey         : #F7F8FB;
-$white        : #ffffff;
-$dark         : #4E4E5D;
+
 
 // TYPOGRAPHY
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
