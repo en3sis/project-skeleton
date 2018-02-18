@@ -1,9 +1,8 @@
-// =================================
-// 			COLOR FUNCTION
-// ==================================
-// USSAGE:
-// color(gray)
-// color(primary, base)
+/*
+color(gray) / color(primary, base)
+Reference: https://codepen.io/jakealbaugh/post/using-sass-functions-to-access-complex-variable-maps
+*/
+
 @function color($color-name, $color-variant:null) {
   @if ($color-variant != null) {
     @return map-get(map-get($colors, $color-name), $color-variant);

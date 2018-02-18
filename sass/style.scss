@@ -1,6 +1,5 @@
 @import 'normalize';
 @import 'mixin/general';
-@import 'imports/flex';
 @import 'variables';
 @import 'functions';
 
@@ -11,7 +10,7 @@ html,body{
   font-family: $base-font;
   font-size  : $base-font-size;
   font-weight: 300;
-  color: color(dark)
+  color: color(dark);
 }
 
 // Headers font-size
@@ -41,4 +40,10 @@ h5{font-size: $h5-font-size;}
   text-rendering         : optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings  : 'liga';
+}
+
+#hello{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
