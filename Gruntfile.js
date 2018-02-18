@@ -19,6 +19,19 @@ module.exports = function (grunt) {
           }
         },
 
+        postcss: {
+          options: {
+              map: true,
+              processors: [
+                    require('pixrem')(),
+                    require('autoprefixer')({browsers: 'last 2 versions'})
+              ]
+          },
+          dist: {
+              src: 'dist/css/*.css'
+          }
+        },
+
         /* =================================
         =  CSS MIN Task
         ================================= */
@@ -29,7 +42,7 @@ module.exports = function (grunt) {
               cwd: 'src/css/',
               src: ['*.css', '!*.min.css'],
               dest: 'dist/css',
-              ext: '.min.css'
+              ext: '.css'
             }]
           }
         },
@@ -99,11 +112,13 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks('grunt-postcss');
+
 
     /* =================================
     =  Register Task
     ================================= */
-    grunt.registerTask('dist', ['htmlmin', 'cssmin']);
+    grunt.registerTask('dist', ['htmlmin', 'cssmin','postcss:dist']);
     grunt.registerTask('default', ['browserSync', 'watch']);
 
 };

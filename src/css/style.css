@@ -45,4 +45,9 @@ h5 {
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga'; }
 
+#hello {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
 /*# sourceMappingURL=style.css.map */
