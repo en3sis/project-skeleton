@@ -8,9 +8,7 @@ Feel free to create requests and improve it.
 [Issues](https://github.com/en3sis/project-skeleton/issues) / [Pull Request](https://github.com/en3sis/project-skeleton/pulls)
 
 
-
-
-## Where to start ##
+## ⚙️ Where to start ##
 
 Make sure you have [Node.js](https://nodejs.org/en/) installed, [Grunt](http://gruntjs.com/), [Ruby](https://rubyinstaller.org/) and [Sass](http://sass-lang.com/install)
 
@@ -37,11 +35,7 @@ Use the task
 ```
 ~ grunt dist
 ```
-This will generate a style.min.css file and and in-line the HTML files.
-
-
-
-**NOTE:** You still need to manualy link the .min.css inside the inlined HTML File for now (fix in next relase)
+This will generate content inside dist/ with inline HTML/CSS and Autoprefixer.
 
 
 ## Grunt taks ##
@@ -56,27 +50,18 @@ This will generate a style.min.css file and and in-line the HTML files.
 ## SASS Files
 [Sass](http://sass-lang.com/) is a preprocessor that adds nested rules, variables, mixins and functions, selector inheritance, and more to CSS. Sass files compile into well-formatted, standard CSS to use in your site or application.
 
-Imported inside the main SASS file /sass/style.scss:
-* [Roboto Font](https://fonts.google.com/specimen/Roboto?selection.family=Roboto)
+Main SASS File: /sass/style.scss
+* [Roboto Font](https://fonts.google.com/specimen/Roboto)
 * [Material-Icons](https://google.github.io/material-design-icons/)
 * [Normalize](https://necolas.github.io/normalize.css/)
-* [Flexblox Mixin for SASS](https://github.com/mastastealth/sass-flex-mixin)
+* [Bootstrap 4 Grid](https://github.com/m-spyratos/bootstrap-4-grid)
+<!-- * [Flexblox Mixin for SASS](https://github.com/mastastealth/sass-flex-mixin) -->
+
 
 
 And other folder structure for components and imports.
 
-
-
-
-The MIT License (MIT)
-=====================
-
-Copyright © `2017` `@en3sis`
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentatio files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following
-conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
+## UPDATES ##
+* ✖️ Removed Flexbox Mixin, added Autoprfixer instead for better browser support.
+* ✔️ Added ESLint with Browser, Vanilla JS, ES6 and jQuery.
+* ✔️ Added Bootstrap 4 Grid (Flex, SASS Version).

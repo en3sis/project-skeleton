@@ -2,10 +2,9 @@
 @import 'mixin/general';
 @import 'variables';
 @import 'functions';
+@import 'imports/grid';
 
 
-// =========================================
-// GENERAL STYLE
 html,body{
   font-family: $base-font;
   font-size  : $base-font-size;
@@ -40,10 +39,4 @@ h5{font-size: $h5-font-size;}
   text-rendering         : optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings  : 'liga';
-}
-
-#hello{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }

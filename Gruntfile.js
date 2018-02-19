@@ -1,16 +1,10 @@
 module.exports = function (grunt) {
     grunt.initConfig({
-        /* =================================
-        =  WATCH Task
-        ================================= */
         watch: {
             files: '**/*.scss',
             tasks: ['sass']
         },
 
-        /* =================================
-        =  SASS Task
-        ================================= */
         sass: {
           dev: {
               files: {
@@ -32,9 +26,6 @@ module.exports = function (grunt) {
           }
         },
 
-        /* =================================
-        =  CSS MIN Task
-        ================================= */
         cssmin: {
           target: {
             files: [{
@@ -47,10 +38,8 @@ module.exports = function (grunt) {
           }
         },
 
-        /* =================================
-        =  HTML MIN Task
-        ================================= */
-        htmlmin: {
+
+       htmlmin: {
             dist: {
               options: {
                   collapseBooleanAttributes: true,
@@ -78,15 +67,10 @@ module.exports = function (grunt) {
 
               files: {
                 'dist/index.html': 'src/index.html'
-                // Dictionary of files
-                // 'destination': 'source'
               }
             }
           },
 
-        /* =================================
-        =  BrowserSync Task
-        ================================= */
         browserSync: {
             dev: {
                 bsFiles: {
@@ -104,9 +88,6 @@ module.exports = function (grunt) {
         }
     });
 
-    /* =================================
-    =  GRUNT NPM TAKS
-    ================================= */
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-sass');
@@ -114,10 +95,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-postcss');
 
-
-    /* =================================
-    =  Register Task
-    ================================= */
     grunt.registerTask('dist', ['htmlmin', 'cssmin','postcss:dist']);
     grunt.registerTask('default', ['browserSync', 'watch']);
 
