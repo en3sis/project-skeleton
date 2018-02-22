@@ -35,7 +35,7 @@ Use the task
 ```
 ~ grunt dist
 ```
-This will generate content inside dist/ with inline HTML/CSS and Autoprefixer.
+This will generate content inside dist/ coping the js and img folders from src/, inline HTML/CSS and Autoprefixer.
 
 
 ## Grunt taks ##
@@ -65,3 +65,4 @@ And other folder structure for components and imports.
 * ✖️ Removed Flexbox Mixin, added Autoprfixer instead for better browser support.
 * ✔️ Added ESLint with Browser, Vanilla JS, ES6 and jQuery.
 * ✔️ Added Bootstrap 4 Grid (Flex, SASS Version).
+* ✔️ Added Grunt Copy, copy src/js and img folder to /dist.
