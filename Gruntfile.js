@@ -85,7 +85,23 @@ module.exports = function (grunt) {
                     server: './src'
                 }
             }
-        }
+        },
+
+        copy: {
+          main: {
+            files: [
+              {
+                expand: true,
+                cwd: 'src/',
+                src: '**',
+                dest: 'dist/',
+                flatten: false,
+              }
+            ],
+          },
+        },
+
+
     });
 
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
@@ -94,8 +110,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-postcss');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('dist', ['htmlmin', 'cssmin','postcss:dist']);
+    grunt.registerTask('dist', ['copy','htmlmin', 'cssmin','postcss:dist']);
     grunt.registerTask('default', ['browserSync', 'watch']);
 
 };

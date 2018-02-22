@@ -1,2 +1,3 @@
-let x = document.getElementById('hello');
-	x.textContent = "Hello world";
+$('#hello').html(`<h1> Hello world </h1>`);
+
+let testESLINT;
