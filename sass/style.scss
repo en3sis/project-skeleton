@@ -1,10 +1,3 @@
-@import 'normalize';
-@import 'mixin/general';
-@import 'variables';
-@import 'imports/grid';
-@import 'functions';
-
-
 html,body{
   font-family: $base-font;
   font-size  : $base-font-size;
@@ -12,8 +5,7 @@ html,body{
   color: color(dark);
 }
 
-// Headers font-size
-// h1,h2,h3,h4,h5,h6
+
 h1{font-size: $h1-font-size;}
 h2{font-size: $h2-font-size;}
 h3{font-size: $h3-font-size;}
@@ -21,7 +13,7 @@ h4{font-size: $h4-font-size;}
 h5{font-size: $h5-font-size;}
 h5{font-size: $h5-font-size;}
 
-// Material Icons font
+
 .material-icons {
   font-family   : 'Material Icons';
   font-weight   : normal;
